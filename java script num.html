@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/javascript.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script</title>
+</head>
+<body>
+
+
+    <script>
+        let num1=7
+        let num2=-7
+
+        if (num2 == num1) {
+            console.log ("positive")
+        }
+
+        else { console.log ("negative")
+        }
+    </script>
+
+
+<script>
+    let num3=20
+    let num4=10
+
+    if (num3 < num4) {
+        console.log ("even")
+    }
+
+    else { console.log ("odd")
+    }
+</script>
+
+
+<script>
+hour=20
+
+if (hour>24)
+console.log ("good morning")
+
+else (hour<19)
+console.log ("good day")
+
+</script>
+
+<script>
+    minute=20
+
+    if (minute>8)
+    console.log ("good evening")
+
+else (minute<12)
+console.log ("good afternoon")
+
+</script>
+
+
+<script>
+    let num5=60
+    let num6=60
+
+    console.log (num6 + num5);
+
+    let num7=500;
+    let num8=250;
+    console.log (num7 - num8);
+
+
+let num9=18;
+let num10=12;
+
+console.log (num9 * num10);
+
+
+let num11=600;
+let num12=60;
+
+console.log (num11 / num12);
+</script>
+
+
+<script>
+    var a,b;
+    a=prompt ("enter 1st number");
+    b=prompt ("enter 2nd number");
+
+    if (a>b)
+
+    alert (a+ "is greater number");
+    else
+    alert (b+ "is greater number");
+</script>
+
+
+<script>
+    var age;
+    age=prompt ("enter your age");
+
+    if (age>18)
+
+    alert ("person is eligible for nic");
+    else
+    alert ("person is not eligible for nic");
+</script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
